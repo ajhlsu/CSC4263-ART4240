@@ -2,76 +2,46 @@ Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
-    Vendor:   Intel
-    VRAM:     1136 MB
-    Driver:   20.19.15.4531
+    Renderer: NVIDIA GeForce GTX 950 (ID=0x1402)
+    Vendor:   NVIDIA
+    VRAM:     2016 MB
+    Driver:   21.21.13.7653
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.432 seconds
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\System.dll (this message is harmless)
-desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+Platform assembly: C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.070 seconds
+Platform assembly: C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\aljhe\OneDrive\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\System.dll (this message is harmless)
+desktop: 1768x992 60Hz; virtual: 3134x992 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.322477 ms
+UnloadTime: 1.321144 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.389663 ms
+UnloadTime: 5.585128 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 334.
-Total: 0.198602 ms (FindLiveObjects: 0.023093 ms CreateObjectMapping: 0.022580 ms MarkObjects: 0.139586 ms  DeleteObjects: 0.012829 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.323819 ms
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 254.
-Total: 0.261724 ms (FindLiveObjects: 0.040028 ms CreateObjectMapping: 0.016421 ms MarkObjects: 0.156008 ms  DeleteObjects: 0.048752 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 394.
+Total: 0.310808 ms (FindLiveObjects: 0.035489 ms CreateObjectMapping: 0.017744 ms MarkObjects: 0.232344 ms  DeleteObjects: 0.024121 ms)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.769777 ms
+UnloadTime: 0.479382 ms
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 254.
-Total: 0.153442 ms (FindLiveObjects: 0.011803 ms CreateObjectMapping: 0.010263 ms MarkObjects: 0.127783 ms  DeleteObjects: 0.002565 ms)
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 258.
+Total: 0.346575 ms (FindLiveObjects: 0.068483 ms CreateObjectMapping: 0.016912 ms MarkObjects: 0.199904 ms  DeleteObjects: 0.059888 ms)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.395665 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.660156 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 334.
-Total: 0.196036 ms (FindLiveObjects: 0.029251 ms CreateObjectMapping: 0.014882 ms MarkObjects: 0.144718 ms  DeleteObjects: 0.006671 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.453142 ms
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 254.
-Total: 0.249920 ms (FindLiveObjects: 0.021553 ms CreateObjectMapping: 0.017961 ms MarkObjects: 0.157034 ms  DeleteObjects: 0.053371 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.543975 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 334.
-Total: 0.203221 ms (FindLiveObjects: 0.031304 ms CreateObjectMapping: 0.022066 ms MarkObjects: 0.141125 ms  DeleteObjects: 0.008210 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.383862 ms
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 254.
-Total: 0.315095 ms (FindLiveObjects: 0.044647 ms CreateObjectMapping: 0.015908 ms MarkObjects: 0.198089 ms  DeleteObjects: 0.055937 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.288409 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 254.
-Total: 0.212458 ms (FindLiveObjects: 0.032330 ms CreateObjectMapping: 0.011290 ms MarkObjects: 0.164732 ms  DeleteObjects: 0.003592 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 271.
+Total: 0.294727 ms (FindLiveObjects: 0.057670 ms CreateObjectMapping: 0.016358 ms MarkObjects: 0.214044 ms  DeleteObjects: 0.005267 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: e0 -> priority: 1 
+  Thread -> id: 3a98 -> priority: 1 

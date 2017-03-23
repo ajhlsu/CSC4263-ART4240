@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class CharacterControllerScript : MonoBehaviour 
 	{
-		public float maxSpeed = .1f;
+		public float maxSpeed = 1f;
 		private bool facingRight = true;
 		private Rigidbody2D rigi;
 
@@ -50,32 +51,23 @@ public class CharacterControllerScript : MonoBehaviour
 
 			}
 
-		}
+            if (gameObject.transform.position.y < -2)
+            {
+                int lives = PlayerPrefs.GetInt("Lives");
+                if (lives > 1)
+                {
+                    PlayerPrefs.SetInt("Lives", lives - 1);
+                    SceneManager.LoadScene("LifeLoss");
+                }
+                else
+                    SceneManager.LoadScene("GameOver");
+            }
 
-		/*private void OnTriggerEnter2D(Collider2D other)
-		{
-			{
-				anim.SetBool("Death", true);
-				rigi.AddForce(new Vector2(0, jumpForce));
-				float  realLives = PlayerPrefs.GetFloat("Lives");
-				realLives--;
-				PlayerPrefs.SetFloat("Lives", realLives);
-				if ( realLives>0)
-					Application.LoadLevel("Save");
-				else
-				{
-					rigi.AddForce(new Vector2(0, jumpForce));
-				}
-				//Vector3 position = new Vector3(-7, -2, 0);
-				//Quaternion rotation = new Quaternion();
-				//Instantiate(rigi.gameObject, position, rotation);
-				//Destroy(rigi.gameObject);
-			}
-		}
-		*/
-		
 
-		void Flip()
+
+    }
+
+    void Flip()
 		{
 			facingRight = !facingRight;
 			Vector3 theScale = transform.localScale;
