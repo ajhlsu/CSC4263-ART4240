@@ -25,16 +25,15 @@ public class CharacterControllerScript : MonoBehaviour
 
 		void Update ()
 		{
+			float move = Input.GetAxis("Horizontal")/4;
+			anim.SetFloat("Speed", Mathf.Abs(move)*100);
+			rigi.velocity = new Vector2(move * maxSpeed, rigi.velocity.y);
+
 			grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
 			anim.SetBool("Ground", grounded);
 
 			anim.SetFloat("vSpeed", rigi.velocity.y);
 			
-			
-			float move = Input.GetAxis("Horizontal")/4;
-			anim.SetFloat("Speed", Mathf.Abs(move)*100);
-			rigi.velocity = new Vector2(move * maxSpeed, rigi.velocity.y);
-
 			if(move > 0 && !facingRight)
 			{
 				Flip();
