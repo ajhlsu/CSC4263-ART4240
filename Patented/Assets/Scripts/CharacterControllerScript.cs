@@ -24,17 +24,10 @@ public class CharacterControllerScript : MonoBehaviour
 
 		}
 
-		void Update ()
+		void FixedUpdate ()
 		{
 			float move = Input.GetAxis("Horizontal")/4;
-			anim.SetFloat("Speed", Mathf.Abs(move)*100);
-			rigi.velocity = new Vector2(move * maxSpeed, rigi.velocity.y);
 
-			grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
-			anim.SetBool("Ground", grounded);
-
-			anim.SetFloat("vSpeed", rigi.velocity.y);
-			
 			if(move > 0 && !facingRight)
 			{
 				Flip();
@@ -43,6 +36,14 @@ public class CharacterControllerScript : MonoBehaviour
 			{
 				Flip();
 			}
+			anim.SetFloat("Speed", Mathf.Abs(move)*100000);
+			rigi.velocity = new Vector2(move * maxSpeed, rigi.velocity.y);
+
+			grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+			anim.SetBool("Ground", grounded);
+
+			anim.SetFloat("vSpeed", rigi.velocity.y);
+			
 			
 			if(grounded && Input.GetKeyDown(KeyCode.Space))
 			{
