@@ -17,15 +17,27 @@ public class CharacterControllerScript : MonoBehaviour
 		public LayerMask whatIsGround;
 		public float jumpForce = 10f;
 
+		private Rigidbody2D proj;
+		public float hasItem = 0;
+		GameObject clone;
+		public Rigidbody2D projectile;
+
 		void Start ()
 		{
 			rigi = GetComponent<Rigidbody2D>();
 			anim = GetComponent<Animator>();
-
+			proj = GameObject.Find("Circle").GetComponent<Rigidbody2D>();
+			projectile = proj;
 		}
 
 		void FixedUpdate ()
 		{
+
+			if (hasItem>0) 
+			{
+				CheckForItem(hasItem);
+
+			}
 			float move = Input.GetAxis("Horizontal")/4;
 
 			if(move > 0 && !facingRight)
@@ -75,5 +87,38 @@ public class CharacterControllerScript : MonoBehaviour
 			theScale.x *= -1;
 			transform.localScale = theScale;
 		}
+
+
+	public void CheckForItem(float item)
+	{
+		if (item == 1) 
+		{
+			jumpForce = 1200f;
+		}
+
+		if (item == 2) 
+		{
+			sendProjectile();
+		}
 	}
 
+	public void sendProjectile()
+	{
+		if (Input.GetKeyDown (KeyCode.C)) 
+		{
+
+			FireProjectile();
+		}
+	}
+
+	void FireProjectile()
+	{
+		Rigidbody2D clone;
+		Vector3 loc = new Vector3 (transform.position.x + 10, transform.position.y, transform.position.z);
+		clone = Instantiate (projectile, transform.position, transform.rotation) as Rigidbody2D; 
+		if(facingRight)
+			clone.AddForce(new Vector2(1000f, 0));
+		else
+			clone.AddForce(new Vector2(-1000f, 0));
+	}
+}
