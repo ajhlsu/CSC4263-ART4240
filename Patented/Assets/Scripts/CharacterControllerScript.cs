@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CharacterControllerScript : MonoBehaviour 
 	{
-		public float maxSpeed = 1f;
+		public float maxSpeed = 30000f;
 		private bool facingRight = true;
 		private Rigidbody2D rigi;
 
@@ -38,7 +38,7 @@ public class CharacterControllerScript : MonoBehaviour
 				CheckForItem(hasItem);
 
 			}
-			float move = Input.GetAxis("Horizontal")/4;
+			float move = Input.GetAxis("Horizontal")*2;
 
 			if(move > 0 && !facingRight)
 			{
@@ -60,11 +60,11 @@ public class CharacterControllerScript : MonoBehaviour
 			if(grounded && Input.GetKeyDown(KeyCode.Space))
 			{
 				anim.SetBool("Ground", false);
-				rigi.AddForce(new Vector2(0, jumpForce/3));
+				rigi.AddForce(new Vector2(0, jumpForce*2));
 
 			}
 
-            if (gameObject.transform.position.y < -2)
+            if (gameObject.transform.position.y < -100)
             {
                 int lives = PlayerPrefs.GetInt("Lives");
                 if (lives > 1)

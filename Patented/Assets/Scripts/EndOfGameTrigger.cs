@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class EndOfLevelTrigger : MonoBehaviour {
+public class EndOfGameTrigger : MonoBehaviour {
 Animator anim;
     bool mailboxClosed = false;
     Rigidbody2D rigi;
