@@ -30,7 +30,7 @@ Animator anim;
         {
             if (rigi.transform.position.y > 4)
             {
-                SceneManager.LoadScene("Completed");
+                SceneManager.LoadScene("3 Completed");
             }
         }
     }

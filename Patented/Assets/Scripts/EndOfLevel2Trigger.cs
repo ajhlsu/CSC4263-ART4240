@@ -9,7 +9,7 @@ public class EndOfLevel2Trigger : MonoBehaviour
 	{
 		private void OnTriggerEnter2D(Collider2D collide)
 		{
-			SceneManager.LoadScene("Completed");
+			SceneManager.LoadScene("2 Completed");
 		}
 	}
 }

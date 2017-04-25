@@ -2,46 +2,51 @@ Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
-    Vendor:   Intel
-    VRAM:     1136 MB
-    Driver:   20.19.15.4531
+    Renderer: NVIDIA GeForce GTX 580 (ID=0x1080)
+    Vendor:   NVIDIA
+    VRAM:     1488 MB
+    Driver:   8.15.10.2618
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.066 seconds
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Alex\Documents\Unity Projects\CSC4263-ART4240\Patented\Patented_Data\Managed\System.dll (this message is harmless)
-desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+Platform assembly: C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.024 seconds
+Platform assembly: C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Garrett\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.685493 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.348919 ms
+UnloadTime: 1.205882 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 9.904258 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 394.
-Total: 0.220156 ms (FindLiveObjects: 0.024632 ms CreateObjectMapping: 0.023606 ms MarkObjects: 0.158573 ms  DeleteObjects: 0.012829 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 309.
+Total: 0.243646 ms (FindLiveObjects: 0.024394 ms CreateObjectMapping: 0.029815 ms MarkObjects: 0.176485 ms  DeleteObjects: 0.011745 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CharacterControllerScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.474182 ms
+UnloadTime: 0.522830 ms
 
-Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 267.
-Total: 0.336135 ms (FindLiveObjects: 0.037975 ms CreateObjectMapping: 0.032843 ms MarkObjects: 0.143178 ms  DeleteObjects: 0.121624 ms)
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 272.
+Total: 0.444526 ms (FindLiveObjects: 0.022587 ms CreateObjectMapping: 0.028611 ms MarkObjects: 0.230695 ms  DeleteObjects: 0.161727 ms)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.331517 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.539394 ms
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 271.
-Total: 0.483932 ms (FindLiveObjects: 0.114953 ms CreateObjectMapping: 0.138559 ms MarkObjects: 0.223235 ms  DeleteObjects: 0.003592 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 281.
+Total: 0.187026 ms (FindLiveObjects: 0.025298 ms CreateObjectMapping: 0.026804 ms MarkObjects: 0.131611 ms  DeleteObjects: 0.003011 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2088 -> priority: 1 
+  Thread -> id: 22f4 -> priority: 1 
