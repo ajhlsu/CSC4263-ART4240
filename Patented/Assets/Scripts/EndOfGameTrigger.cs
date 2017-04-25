@@ -28,7 +28,7 @@ Animator anim;
     {
         if (mailboxClosed)
         {
-            if (rigi.transform.position.y > 4)
+            if (rigi.transform.position.y > -29)
             {
                 SceneManager.LoadScene("3 Completed");
             }
