@@ -13,9 +13,12 @@ public class SuperJumpItem : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		hasItem = true;
-		rigi = other.GetComponent<Rigidbody2D> ();
-		other.GetComponent<CharacterControllerScript> ().hasItem = 1;
+		if (other.tag.Contains("Player")) 
+		{
+			hasItem = true;
+			rigi = other.GetComponent<Rigidbody2D> ();
+			other.GetComponent<CharacterControllerScripLevel2> ().hasItem = 1;
+		}
 	}
 
 	private void Update()
@@ -23,7 +26,7 @@ public class SuperJumpItem : MonoBehaviour
 		if (hasItem) 
 		{
 			character = rigi.position;
-			character.Set (character.x, character.y + 2, character.z);
+			character.Set (character.x, character.y + 7, character.z);
 			GetComponent<Transform> ().position = character;
 
 		}

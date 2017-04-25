@@ -16,7 +16,7 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 	public Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
-	public float jumpForce = 10f;
+	public float jumpForce = 700;
 
 	private Rigidbody2D proj;
 	public float hasItem = 0;
@@ -61,7 +61,7 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 		if(grounded && Input.GetKeyDown(KeyCode.Space))
 		{
 			anim.SetBool("Ground", false);
-			rigi.AddForce(new Vector2(0, jumpForce*2));
+			rigi.AddForce(new Vector2(0, jumpForce* 2));
 
 		}
 
@@ -94,7 +94,7 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 	{
 		if (item == 1) 
 		{
-			jumpForce = 1200f;
+			jumpForce = 1200;
 		}
 
 		if (item == 2) 
