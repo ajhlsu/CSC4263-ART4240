@@ -17,19 +17,31 @@ Platform assembly: C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Paten
 Loading C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.126 seconds
+- Completed reload, in  0.054 seconds
 Platform assembly: C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\System.dll (this message is harmless)
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.318059 ms
+UnloadTime: 2.489463 ms
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.191898 ms
+UnloadTime: 5.134421 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 615.
-Total: 0.282765 ms (FindLiveObjects: 0.049265 ms CreateObjectMapping: 0.015395 ms MarkObjects: 0.201681 ms  DeleteObjects: 0.015395 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 276.
+Total: 0.200655 ms (FindLiveObjects: 0.015908 ms CreateObjectMapping: 0.015395 ms MarkObjects: 0.156008 ms  DeleteObjects: 0.012829 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.457761 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 266.
+Total: 0.748737 ms (FindLiveObjects: 0.134967 ms CreateObjectMapping: 0.079543 ms MarkObjects: 0.520370 ms  DeleteObjects: 0.010263 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.381296 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 615.
+Total: 0.296621 ms (FindLiveObjects: 0.051831 ms CreateObjectMapping: 0.018987 ms MarkObjects: 0.216051 ms  DeleteObjects: 0.008724 ms)
 
 NullReferenceException: Object reference not set to an instance of an object
   at CharacterControllerScript.Start () [0x00000] in <filename unknown>:0 
@@ -37,46 +49,21 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename:  Line: -1)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.358402 ms
+UnloadTime: 1.364560 ms
 
-Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 271.
-Total: 0.491631 ms (FindLiveObjects: 0.046186 ms CreateObjectMapping: 0.034896 ms MarkObjects: 0.192957 ms  DeleteObjects: 0.216564 ms)
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 280.
+Total: 0.483420 ms (FindLiveObjects: 0.036436 ms CreateObjectMapping: 0.022066 ms MarkObjects: 0.202195 ms  DeleteObjects: 0.221696 ms)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.600427 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.634297 ms
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 271.
-Total: 0.239144 ms (FindLiveObjects: 0.023093 ms CreateObjectMapping: 0.022066 ms MarkObjects: 0.189365 ms  DeleteObjects: 0.004105 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 615.
+Total: 0.333570 ms (FindLiveObjects: 0.048752 ms CreateObjectMapping: 0.035922 ms MarkObjects: 0.237604 ms  DeleteObjects: 0.010263 ms)
 
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.651232 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 611.
-Total: 0.310477 ms (FindLiveObjects: 0.050805 ms CreateObjectMapping: 0.025146 ms MarkObjects: 0.224262 ms  DeleteObjects: 0.009750 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.572400 ms
-
-Unloading 57 unused Assets to reduce memory usage. Loaded Objects now: 280.
-Total: 0.461353 ms (FindLiveObjects: 0.030791 ms CreateObjectMapping: 0.016421 ms MarkObjects: 0.186286 ms  DeleteObjects: 0.227341 ms)
-
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.417733 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 611.
-Total: 0.248894 ms (FindLiveObjects: 0.037975 ms CreateObjectMapping: 0.016421 ms MarkObjects: 0.184746 ms  DeleteObjects: 0.008724 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.476434 ms
-
-Unloading 57 unused Assets to reduce memory usage. Loaded Objects now: 280.
-Total: 0.512672 ms (FindLiveObjects: 0.045673 ms CreateObjectMapping: 0.032330 ms MarkObjects: 0.201681 ms  DeleteObjects: 0.231446 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.384889 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 284.
-Total: 0.827255 ms (FindLiveObjects: 0.111361 ms CreateObjectMapping: 0.063635 ms MarkObjects: 0.631731 ms  DeleteObjects: 0.013342 ms)
+NullReferenceException: Object reference not set to an instance of an object
+  at CharacterControllerScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 19e8 -> priority: 1 
+  Thread -> id: 2e78 -> priority: 1 

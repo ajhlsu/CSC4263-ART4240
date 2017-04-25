@@ -9,6 +9,6 @@ public class DisplayLives : MonoBehaviour {
     void Start()
     {
         txt = gameObject.GetComponent<Text>();
-        txt.text = "Lives : " + PlayerPrefs.GetInt("Lives");
+        txt.text = "Letters : " + PlayerPrefs.GetInt("Lives");
     }
 }
