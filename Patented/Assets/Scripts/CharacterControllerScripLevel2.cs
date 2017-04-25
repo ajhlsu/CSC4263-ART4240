@@ -22,6 +22,7 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 	public float hasItem = 0;
 	GameObject clone;
 	public Rigidbody2D projectile;
+	bool played = false;
 
 	public AudioClip[] audioClip;
 
@@ -29,7 +30,7 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 	{
 		rigi = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
-		proj = GameObject.Find("Circle").GetComponent<Rigidbody2D>();
+		//proj = GameObject.Find("Circle").GetComponent<Rigidbody2D>();
 		projectile = proj;
 	}
 
@@ -38,6 +39,11 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 
 		if (hasItem>0) 
 		{
+			if (played == false) 
+			{
+				PlaySound (1);
+				played = true;
+			}
 			CheckForItem(hasItem);
 
 		}

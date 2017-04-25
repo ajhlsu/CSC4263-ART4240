@@ -22,22 +22,28 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 	public float hasItem = 0;
 	GameObject clone;
 	public Rigidbody2D projectile;
+	bool played = false;
+
+	public AudioClip[] audioClip;
 
 	void Start ()
 	{
 		rigi = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
-		proj = GameObject.Find("Circle").GetComponent<Rigidbody2D>();
+		proj = GameObject.Find("Projectile_1").GetComponent<Rigidbody2D>();
 		projectile = proj;
 	}
 
 	void FixedUpdate ()
 	{
 
-		if (hasItem>0) 
+		if (hasItem > 0) 
 		{
-			CheckForItem(hasItem);
-
+			if (played == false) {
+				PlaySound (1);
+				played = true;
+			}
+			CheckForItem (hasItem);
 		}
 		float move = Input.GetAxis("Horizontal")*2;
 
@@ -61,6 +67,7 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 		if(grounded && Input.GetKeyDown(KeyCode.Space))
 		{
 			anim.SetBool("Ground", false);
+			PlaySound (0);
 			rigi.AddForce(new Vector2(0, jumpForce*2));
 
 		}
@@ -80,6 +87,13 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 
 
 	}
+
+	void PlaySound(int clip)
+	{
+		GetComponent<AudioSource> ().clip = audioClip[clip];
+		GetComponent<AudioSource> ().Play ();
+	}
+
 
 	void Flip()
 	{
@@ -107,7 +121,6 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 	{
 		if (Input.GetKeyDown (KeyCode.C)) 
 		{
-
 			FireProjectile();
 		}
 	}
@@ -115,11 +128,18 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 	void FireProjectile()
 	{
 		Rigidbody2D clone;
-		Vector3 loc = new Vector3 (transform.position.x + 10, transform.position.y, transform.position.z);
-		clone = Instantiate (projectile, transform.position, transform.rotation) as Rigidbody2D; 
+
 		if(facingRight)
-			clone.AddForce(new Vector2(1000f, 0));
+		{
+			Vector3 loc = new Vector3 (transform.position.x+1, transform.position.y, transform.position.z);
+			clone = Instantiate (projectile, loc, transform.rotation) as Rigidbody2D; 
+			clone.AddForce(new Vector2(1000f *2, 0));
+		}
 		else
-			clone.AddForce(new Vector2(-1000f, 0));
+		{
+			Vector3 loc = new Vector3 (transform.position.x-1, transform.position.y, transform.position.z);
+			clone = Instantiate (projectile, loc, transform.rotation) as Rigidbody2D; 
+			clone.AddForce(new Vector2(-1000f* 2, 0));
+		}
 	}
 }

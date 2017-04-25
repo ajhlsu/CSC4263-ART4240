@@ -33,11 +33,7 @@ public class CharacterControllerScript : MonoBehaviour
 			projectile = proj;
 		}
 
-		void playSound(int clip)
-		{
-			GetComponent<AudioSource> ().clip = audioClip [clip];
-			GetComponent<AudioSource> ().Play ();
-		}
+		
 
 		void FixedUpdate ()
 		{
@@ -69,6 +65,7 @@ public class CharacterControllerScript : MonoBehaviour
 			if(grounded && Input.GetKeyDown(KeyCode.Space))
 			{
 				anim.SetBool("Ground", false);
+				PlaySound (0);
 				rigi.AddForce(new Vector2(0, jumpForce*2));
 
 			}
@@ -88,6 +85,12 @@ public class CharacterControllerScript : MonoBehaviour
 
 
     }
+
+	void PlaySound(int clip)
+	{
+		GetComponent<AudioSource> ().clip = audioClip [clip];
+		GetComponent<AudioSource> ().Play ();
+	}
 
     void Flip()
 		{

@@ -13,9 +13,12 @@ public class RayGunScript : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		hasItem = true;
-		rigi = other.GetComponent<Rigidbody2D> ();
-		other.GetComponent<CharacterControllerScript> ().hasItem = 2;
+		if (other.tag.Contains ("Player")) 
+		{
+			hasItem = true;
+			rigi = other.GetComponent<Rigidbody2D> ();
+			other.GetComponent<CharacterControllerScriptLevel3> ().hasItem = 2;
+		}
 	}
 
 	private void Update()
@@ -23,7 +26,7 @@ public class RayGunScript : MonoBehaviour
 		if (hasItem) 
 		{
 			character = rigi.position;
-			character.Set (character.x, character.y + 2, character.z);
+			character.Set (character.x, character.y + 7, character.z);
 			GetComponent<Transform> ().position = character;
 
 		}

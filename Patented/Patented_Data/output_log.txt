@@ -17,19 +17,19 @@ Platform assembly: C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Paten
 Loading C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.118 seconds
+- Completed reload, in  0.126 seconds
 Platform assembly: C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Alex\Documents\GitHub\CSC4263-ART4240\Patented\Patented_Data\Managed\System.dll (this message is harmless)
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.566126 ms
+UnloadTime: 2.318059 ms
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 119.949425 ms
+UnloadTime: 5.191898 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 309.
-Total: 3.433211 ms (FindLiveObjects: 0.029251 ms CreateObjectMapping: 0.021040 ms MarkObjects: 3.363417 ms  DeleteObjects: 0.018474 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 615.
+Total: 0.282765 ms (FindLiveObjects: 0.049265 ms CreateObjectMapping: 0.015395 ms MarkObjects: 0.201681 ms  DeleteObjects: 0.015395 ms)
 
 NullReferenceException: Object reference not set to an instance of an object
   at CharacterControllerScript.Start () [0x00000] in <filename unknown>:0 
@@ -37,76 +37,46 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename:  Line: -1)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.336136 ms
+UnloadTime: 1.358402 ms
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 268.
-Total: 0.307911 ms (FindLiveObjects: 0.029251 ms CreateObjectMapping: 0.023093 ms MarkObjects: 0.157034 ms  DeleteObjects: 0.098018 ms)
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 271.
+Total: 0.491631 ms (FindLiveObjects: 0.046186 ms CreateObjectMapping: 0.034896 ms MarkObjects: 0.192957 ms  DeleteObjects: 0.216564 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.600427 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 271.
+Total: 0.239144 ms (FindLiveObjects: 0.023093 ms CreateObjectMapping: 0.022066 ms MarkObjects: 0.189365 ms  DeleteObjects: 0.004105 ms)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.508566 ms
+UnloadTime: 0.651232 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 315.
-Total: 0.185773 ms (FindLiveObjects: 0.035409 ms CreateObjectMapping: 0.014882 ms MarkObjects: 0.127270 ms  DeleteObjects: 0.007184 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 611.
+Total: 0.310477 ms (FindLiveObjects: 0.050805 ms CreateObjectMapping: 0.025146 ms MarkObjects: 0.224262 ms  DeleteObjects: 0.009750 ms)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at CharacterControllerScript.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.572400 ms
 
-Scene 'LifeLoss' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
+Unloading 57 unused Assets to reduce memory usage. Loaded Objects now: 280.
+Total: 0.461353 ms (FindLiveObjects: 0.030791 ms CreateObjectMapping: 0.016421 ms MarkObjects: 0.186286 ms  DeleteObjects: 0.227341 ms)
 
-Scene 'LifeLoss' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.417733 ms
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.375138 ms
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 611.
+Total: 0.248894 ms (FindLiveObjects: 0.037975 ms CreateObjectMapping: 0.016421 ms MarkObjects: 0.184746 ms  DeleteObjects: 0.008724 ms)
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 263.
-Total: 0.303805 ms (FindLiveObjects: 0.036949 ms CreateObjectMapping: 0.020527 ms MarkObjects: 0.145744 ms  DeleteObjects: 0.089807 ms)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.476434 ms
+
+Unloading 57 unused Assets to reduce memory usage. Loaded Objects now: 280.
+Total: 0.512672 ms (FindLiveObjects: 0.045673 ms CreateObjectMapping: 0.032330 ms MarkObjects: 0.201681 ms  DeleteObjects: 0.231446 ms)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.481881 ms
+UnloadTime: 0.384889 ms
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 281.
-Total: 0.295081 ms (FindLiveObjects: 0.034383 ms CreateObjectMapping: 0.024632 ms MarkObjects: 0.230933 ms  DeleteObjects: 0.004105 ms)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.478802 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 309.
-Total: 0.189878 ms (FindLiveObjects: 0.031817 ms CreateObjectMapping: 0.014369 ms MarkObjects: 0.134967 ms  DeleteObjects: 0.008210 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at CharacterControllerScript.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Scene 'LifeLoss' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-Scene 'LifeLoss' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.309450 ms
-
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 263.
-Total: 0.340755 ms (FindLiveObjects: 0.034896 ms CreateObjectMapping: 0.015395 ms MarkObjects: 0.190905 ms  DeleteObjects: 0.098531 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.392586 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 281.
-Total: 0.236065 ms (FindLiveObjects: 0.032330 ms CreateObjectMapping: 0.022066 ms MarkObjects: 0.177562 ms  DeleteObjects: 0.003592 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 284.
+Total: 0.827255 ms (FindLiveObjects: 0.111361 ms CreateObjectMapping: 0.063635 ms MarkObjects: 0.631731 ms  DeleteObjects: 0.013342 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: c08 -> priority: 1 
+  Thread -> id: 19e8 -> priority: 1 
