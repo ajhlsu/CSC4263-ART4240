@@ -70,7 +70,7 @@ public class CharacterControllerScript : MonoBehaviour
                 if (lives > 1)
                 {
                     PlayerPrefs.SetInt("Lives", lives - 1);
-                    SceneManager.LoadScene("LifeLoss");
+                    SceneManager.LoadScene("1 Lifeloss");
                 }
                 else
                     SceneManager.LoadScene("GameOver");
