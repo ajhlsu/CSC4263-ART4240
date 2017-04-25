@@ -23,6 +23,8 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 	GameObject clone;
 	public Rigidbody2D projectile;
 
+	public AudioClip[] audioClip;
+
 	void Start ()
 	{
 		rigi = GetComponent<Rigidbody2D>();
@@ -61,6 +63,7 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 		if(grounded && Input.GetKeyDown(KeyCode.Space))
 		{
 			anim.SetBool("Ground", false);
+			PlaySound (0);
 			rigi.AddForce(new Vector2(0, jumpForce* 2));
 
 		}
@@ -80,6 +83,12 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 
 
 	}
+
+	void PlaySound(int clip)
+		{
+			GetComponent<AudioSource> ().clip = audioClip[clip];
+			GetComponent<AudioSource> ().Play ();
+		}
 
 	void Flip()
 	{

@@ -22,12 +22,21 @@ public class CharacterControllerScript : MonoBehaviour
 		GameObject clone;
 		public Rigidbody2D projectile;
 
+
+		public AudioClip[] audioClip;
+
 		void Start ()
 		{
 			rigi = GetComponent<Rigidbody2D>();
 			anim = GetComponent<Animator>();
 			proj = GameObject.Find("Circle").GetComponent<Rigidbody2D>();
 			projectile = proj;
+		}
+
+		void playSound(int clip)
+		{
+			GetComponent<AudioSource> ().clip = audioClip [clip];
+			GetComponent<AudioSource> ().Play ();
 		}
 
 		void FixedUpdate ()
