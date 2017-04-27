@@ -82,12 +82,7 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 
 		}
 
-        if (gameObject.transform.position.y < -90)
-        {
-            PlaySound(3);
-        }
-
-            if (gameObject.transform.position.y < -100)
+        if (gameObject.transform.position.y < -100)
         {
             int lives = PlayerPrefs.GetInt("Lives");
             if (lives > 1)

@@ -1726,8 +1726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -620, y: 280}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchoredPosition: {x: -450, y: 280}
+  m_SizeDelta: {x: 667, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &674381853
 MonoBehaviour:
@@ -4160,7 +4160,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7e1f86fa6a45ba5479f707fb68e31ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d6853fc6cdddd9a4da245f279a751786, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5052,6 +5052,7 @@ MonoBehaviour:
   jumpForce: 800
   hasItem: 0
   projectile: {fileID: 0}
+  soundListener: 0
   audioClip:
   - {fileID: 8300000, guid: 5c3818b7c3a77cb43a2b6d0871ad75a3, type: 3}
   - {fileID: 8300000, guid: 2e830624af5764a4a883b2bb69fdc8bd, type: 3}

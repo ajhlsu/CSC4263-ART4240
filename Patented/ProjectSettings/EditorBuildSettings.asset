@@ -8,28 +8,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
   - enabled: 1
-    path: Assets/Scenes/Gameplay.unity
-  - enabled: 1
-    path: Assets/Scenes/1 Completed.unity
-  - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-  - enabled: 1
-    path: Assets/Scenes/1 LifeLoss.unity
-  - enabled: 1
-    path: Assets/Scenes/2 Completed.unity
-  - enabled: 1
-    path: Assets/Scenes/3 Completed.unity
-  - enabled: 1
-    path: Assets/Scenes/Level 1.unity
-  - enabled: 1
-    path: Assets/Scenes/Level 2.unity
-  - enabled: 1
-    path: Assets/Scenes/Level 3.unity
-  - enabled: 1
-    path: Assets/Scenes/2 Lifeloss.unity
-  - enabled: 1
-    path: Assets/Scenes/3 Lifeloss.unity
+    path: Assets/Scenes/Intro.unity
   - enabled: 1
     path: Assets/Scenes/Instructions.unity
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
+    path: Assets/Scenes/Level 1.unity
+  - enabled: 1
+    path: Assets/Scenes/1 LifeLoss.unity
+  - enabled: 1
+    path: Assets/Scenes/1 Completed.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+  - enabled: 1
+    path: Assets/Scenes/2 Lifeloss.unity
+  - enabled: 1
+    path: Assets/Scenes/2 Completed.unity
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+  - enabled: 1
+    path: Assets/Scenes/3 Lifeloss.unity
+  - enabled: 1
+    path: Assets/Scenes/3 Completed.unity
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+  - enabled: 0
+    path: Assets/Scenes/Gameplay.unity
