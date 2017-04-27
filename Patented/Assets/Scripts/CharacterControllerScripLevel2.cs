@@ -24,7 +24,9 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 	public Rigidbody2D projectile;
 	bool played = false;
 
-	public AudioClip[] audioClip;
+    public int soundListener = 0;
+
+    public AudioClip[] audioClip;
 
 	void Start ()
 	{
@@ -86,9 +88,13 @@ public class CharacterControllerScripLevel2 : MonoBehaviour
 				SceneManager.LoadScene("GameOver");
 		}
 
+        if (soundListener > 0)
+        {
+            PlaySound(soundListener);
+            soundListener = 0;
+        }
 
-
-	}
+    }
 
 	void PlaySound(int clip)
 		{
