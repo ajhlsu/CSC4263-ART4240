@@ -23,6 +23,9 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 	GameObject clone;
 	public Rigidbody2D projectile;
 	bool played = false;
+    Rigidbody2D test;
+    float x;
+
 
 	public AudioClip[] audioClip;
 
@@ -84,9 +87,31 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 				SceneManager.LoadScene("GameOver");
 		}
 
+        if(test.transform.position.x > x + 36)
+        {
+            Destroy(test.gameObject);
+            //Destroy(test.transform.parent.parent.parent.gameObject);
+        }
 
+        if (facingRight)
+        {
+            if (test.transform.position.x > x + 36)
+            {
+                Destroy(test.gameObject);
+          
+            }
+        }
+        else
+        {
+            if (test.transform.position.x < x - 36)
+            {
+                Destroy(test.gameObject);
+             
+            }
 
-	}
+        }
+
+    }
 
 	void PlaySound(int clip)
 	{
@@ -134,17 +159,16 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 			Vector3 loc = new Vector3 (transform.position.x+1, transform.position.y, transform.position.z);
 			clone = Instantiate (projectile, loc, transform.rotation) as Rigidbody2D; 
 			clone.AddForce(new Vector2(1000f *2, 0));
-
-			if (clone.transform.position.x > loc.x +3) 
-			{
-				Destroy (clone);
-			}
+            test = clone;
+            x = loc.x;
 		}
 		else
 		{
 			Vector3 loc = new Vector3 (transform.position.x-1, transform.position.y, transform.position.z);
 			clone = Instantiate (projectile, loc, transform.rotation) as Rigidbody2D; 
 			clone.AddForce(new Vector2(-1000f* 2, 0));
-		}
+            test = clone;
+            x = loc.x;
+        }
 	}
 }
