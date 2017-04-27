@@ -22,16 +22,14 @@ public class CharacterControllerScript : MonoBehaviour
 		GameObject clone;
 		public Rigidbody2D projectile;
 
-        public int soundListener = 0;
 
-
-    public AudioClip[] audioClip;
+		public AudioClip[] audioClip;
 
 		void Start ()
 		{
 			rigi = GetComponent<Rigidbody2D>();
 			anim = GetComponent<Animator>();
-			//proj = GameObject.Find("Circle").GetComponent<Rigidbody2D>();
+			proj = GameObject.Find("Circle").GetComponent<Rigidbody2D>();
 			projectile = proj;
 		}
 
@@ -84,11 +82,7 @@ public class CharacterControllerScript : MonoBehaviour
                     SceneManager.LoadScene("GameOver");
             }
 
-        if (soundListener > 0)
-        {
-            PlaySound(soundListener);
-            soundListener = 0;
-        }
+
 
     }
 

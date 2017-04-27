@@ -26,8 +26,6 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
     Rigidbody2D test;
     float x;
 
-    public int soundListener = 0;
-
 
 	public AudioClip[] audioClip;
 
@@ -41,13 +39,8 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-        if (soundListener > 0)
-        {
-            PlaySound(soundListener);
-            soundListener = 0;
-        }
 
-        if (hasItem > 0) 
+		if (hasItem > 0) 
 		{
 			if (played == false) {
 				PlaySound (1);
@@ -82,44 +75,42 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 
 		}
 
-        if (gameObject.transform.position.y < -90)
+		if (gameObject.transform.position.y < -100)
+		{
+			int lives = PlayerPrefs.GetInt("Lives");
+			if (lives > 1)
+			{
+				PlayerPrefs.SetInt("Lives", lives - 1);
+				SceneManager.LoadScene("3 Lifeloss");
+			}
+			else
+				SceneManager.LoadScene("GameOver");
+		}
+
+        if(test.transform.position.x > x + 36)
         {
-            PlaySound(3);
+            Destroy(test.gameObject);
+            //Destroy(test.transform.parent.parent.parent.gameObject);
         }
 
-            if (gameObject.transform.position.y < -100)
+        if (facingRight)
         {
-            int lives = PlayerPrefs.GetInt("Lives");
-            if (lives > 1)
+            if (test.transform.position.x > x + 36)
             {
-                PlayerPrefs.SetInt("Lives", lives - 1);
-                SceneManager.LoadScene("3 Lifeloss");
-            }
-            else
-                SceneManager.LoadScene("GameOver");
-        }
-
-        if (test != null)
-        {
-            if (facingRight)
-            {
-                if (test.transform.position.x > x + 36)
-                {
-                    Destroy(test.gameObject);
-
-                }
-            }
-            else
-            {
-                if (test.transform.position.x < x - 36)
-                {
-                    Destroy(test.gameObject);
-
-                }
-
+                Destroy(test.gameObject);
+          
             }
         }
-        
+        else
+        {
+            if (test.transform.position.x < x - 36)
+            {
+                Destroy(test.gameObject);
+             
+            }
+
+        }
+
     }
 
 	void PlaySound(int clip)
@@ -155,7 +146,6 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 	{
 		if (Input.GetKeyDown (KeyCode.C)) 
 		{
-            PlaySound(4);
 			FireProjectile();
 		}
 	}
@@ -166,7 +156,7 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 
 		if(facingRight)
 		{
-            Vector3 loc = new Vector3 (transform.position.x+1, transform.position.y, transform.position.z);
+			Vector3 loc = new Vector3 (transform.position.x+1, transform.position.y, transform.position.z);
 			clone = Instantiate (projectile, loc, transform.rotation) as Rigidbody2D; 
 			clone.AddForce(new Vector2(1000f *2, 0));
             test = clone;
@@ -174,7 +164,7 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 		}
 		else
 		{
-            Vector3 loc = new Vector3 (transform.position.x-1, transform.position.y, transform.position.z);
+			Vector3 loc = new Vector3 (transform.position.x-1, transform.position.y, transform.position.z);
 			clone = Instantiate (projectile, loc, transform.rotation) as Rigidbody2D; 
 			clone.AddForce(new Vector2(-1000f* 2, 0));
             test = clone;
