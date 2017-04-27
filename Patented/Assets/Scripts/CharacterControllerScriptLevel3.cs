@@ -134,6 +134,11 @@ public class CharacterControllerScriptLevel3 : MonoBehaviour
 			Vector3 loc = new Vector3 (transform.position.x+1, transform.position.y, transform.position.z);
 			clone = Instantiate (projectile, loc, transform.rotation) as Rigidbody2D; 
 			clone.AddForce(new Vector2(1000f *2, 0));
+
+			if (clone.transform.position.x > loc.x +3) 
+			{
+				Destroy (clone);
+			}
 		}
 		else
 		{
